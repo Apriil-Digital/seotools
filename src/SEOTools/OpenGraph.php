@@ -770,7 +770,7 @@ class OpenGraph implements OpenGraphContract
      */
     public function setDescription($description = null)
     {
-        return $this->addProperty('description', htmlspecialchars($description, ENT_QUOTES, 'UTF-8', false));
+        return $this->addProperty('description', $description ? htmlspecialchars($description, ENT_QUOTES, 'UTF-8', false) : $description);
     }
 
     /**
@@ -782,8 +782,8 @@ class OpenGraph implements OpenGraphContract
 
         return $this;
     }
-    
-   /**
+
+    /**
      * {@inheritdoc}
      */
     public function setImage($image)

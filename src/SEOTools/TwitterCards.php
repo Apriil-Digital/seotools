@@ -66,10 +66,10 @@ class TwitterCards implements TwitterCardsContract
                 if (is_numeric($key)):
                     $key = $prefix.$key; elseif (is_string($prefix)):
                     $key = $prefix.':'.$key;
-        endif;
+                endif;
 
-        $this->html[] = $this->makeTag($key, $value);
-        endif;
+                $this->html[] = $this->makeTag($key, $value);
+            endif;
         endforeach;
     }
 
@@ -83,8 +83,9 @@ class TwitterCards implements TwitterCardsContract
      */
     private function makeTag($key, $value)
     {
-        $value = str_replace(['http-equiv=', 'url='], '', $value);
-        return '<meta name="'.$this->prefix.strip_tags($key).'" content="'.strip_tags($value).'" />';
+        $value = $value ? str_replace(['http-equiv=', 'url='], '', $value) : $value;
+        return '<meta name="' . $this->prefix . ($key ? strip_tags($key): $key)
+            . '" content="' . ($value ? strip_tags($value) : $value) . '" />';
     }
 
     /**
@@ -126,7 +127,7 @@ class TwitterCards implements TwitterCardsContract
      */
     public function setDescription($description)
     {
-        return $this->addValue('description', htmlspecialchars($description, ENT_QUOTES, 'UTF-8', false));
+        return $this->addValue('description', $description ? htmlspecialchars($description, ENT_QUOTES, 'UTF-8', false) : $description);
     }
 
     /**
