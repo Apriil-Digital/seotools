@@ -1,7 +1,7 @@
 <?php
 
-namespace Apility\SEOTools\Tests\stubs;
-use Apility\SEOTools\Traits\SEOTools;
+namespace Apriil\SEOTools\Tests\stubs;
+use Apriil\SEOTools\Traits\SEOTools;
 
 /**
  * Class SeoToolsTraitStub

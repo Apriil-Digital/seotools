@@ -1,13 +1,13 @@
 <?php
 
-namespace Apility\SEOTools\Traits;
+namespace Apriil\SEOTools\Traits;
 
-use Apility\SEOTools\Contracts\SEOFriendly;
+use Apriil\SEOTools\Contracts\SEOFriendly;
 
 trait SEOTools
 {
     /**
-     * @return \Apility\SEOTools\Contracts\SEOTools
+     * @return \Apriil\SEOTools\Contracts\SEOTools
      */
     protected function seo()
     {
@@ -17,7 +17,7 @@ trait SEOTools
     /**
      * @param SEOFriendly $friendly
      *
-     * @return \Apility\SEOTools\Contracts\SEOTools
+     * @return \Apriil\SEOTools\Contracts\SEOTools
      */
     protected function loadSEO(SEOFriendly $friendly)
     {

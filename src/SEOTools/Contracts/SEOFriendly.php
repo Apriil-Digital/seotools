@@ -1,6 +1,6 @@
 <?php
 
-namespace Apility\SEOTools\Contracts;
+namespace Apriil\SEOTools\Contracts;
 
 interface SEOFriendly
 {

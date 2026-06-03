@@ -1,6 +1,6 @@
 <?php
 
-namespace Apility\SEOTools\Contracts;
+namespace Apriil\SEOTools\Contracts;
 
 /**
  * SEOTools defines contract for the SEO tools aggregator.
@@ -10,7 +10,7 @@ namespace Apility\SEOTools\Contracts;
  * Usage example:
  *
  * ```php
- * use Apility\SEOTools\SEOTools; // implements `Apility\SEOTools\Contracts\SEOTools`
+ * use Apriil\SEOTools\SEOTools; // implements `Apriil\SEOTools\Contracts\SEOTools`
  *
  * $seoTools = new SEOTools();
  *
@@ -24,22 +24,22 @@ namespace Apility\SEOTools\Contracts;
  * $seoTools->twitter()->addValue('app:country', 'US');
  * $seoTools->jsonLd()->addValue('author', [
  *     '@type' => 'Organization',
- *     'name' => 'Apility',
+ *     'name' => 'Apriil',
  * ]));
  * $seoTools->jsonLdMulti()->addValue('author', [
  *     '@type' => 'Organization',
- *     'name' => 'Apility',
+ *     'name' => 'Apriil',
  * ]));
  *
  * // render HTML, it should be placed within 'head' HTML tag
  * echo $seoTools->generate();
  * ```
  *
- * Implementation of this contract is available via {@see \Apility\SEOTools\Facades\SEOTools} facade.
+ * Implementation of this contract is available via {@see \Apriil\SEOTools\Facades\SEOTools} facade.
  * Facade usage example:
  *
  * ```php
- * use Apility\SEOTools\Facades\SEOTools;
+ * use Apriil\SEOTools\Facades\SEOTools;
  *
  * // specify meta info
  * SEOTools::setTitle('Homepage');
@@ -51,49 +51,49 @@ namespace Apility\SEOTools\Contracts;
  * SEOTools::twitter()->addValue('app:country', 'US');
  * SEOTools::jsonLd()->addValue('author', [
  *     '@type' => 'Organization',
- *     'name' => 'Apility',
+ *     'name' => 'Apriil',
  * ]));
  * SEOTools::jsonLdMulti()->addValue('author', [
  *     '@type' => 'Organization',
- *     'name' => 'Apility',
+ *     'name' => 'Apriil',
  * ]));
  *
  * // render HTML, it should be placed within 'head' HTML tag
  * echo SEOTools::generate();
  * ```
  *
- * @see \Apility\SEOTools\Contracts\MetaTags
- * @see \Apility\SEOTools\Contracts\OpenGraph
- * @see \Apility\SEOTools\Contracts\TwitterCards
- * @see \Apility\SEOTools\Contracts\JsonLd
- * @see \Apility\SEOTools\Contracts\JsonLdMulti
+ * @see \Apriil\SEOTools\Contracts\MetaTags
+ * @see \Apriil\SEOTools\Contracts\OpenGraph
+ * @see \Apriil\SEOTools\Contracts\TwitterCards
+ * @see \Apriil\SEOTools\Contracts\JsonLd
+ * @see \Apriil\SEOTools\Contracts\JsonLdMulti
  *
  * @author `Vinicius Reis`
  */
 interface SEOTools
 {
     /**
-     * @return \Apility\SEOTools\Contracts\MetaTags
+     * @return \Apriil\SEOTools\Contracts\MetaTags
      */
     public function metatags();
 
     /**
-     * @return \Apility\SEOTools\Contracts\OpenGraph
+     * @return \Apriil\SEOTools\Contracts\OpenGraph
      */
     public function opengraph();
 
     /**
-     * @return \Apility\SEOTools\Contracts\TwitterCards
+     * @return \Apriil\SEOTools\Contracts\TwitterCards
      */
     public function twitter();
 
     /**
-     * @return \Apility\SEOTools\Contracts\JsonLd
+     * @return \Apriil\SEOTools\Contracts\JsonLd
      */
     public function jsonLd();
 
     /**
-     * @return \Apility\SEOTools\Contracts\JsonLdMulti
+     * @return \Apriil\SEOTools\Contracts\JsonLdMulti
      */
     public function jsonLdMulti();
 

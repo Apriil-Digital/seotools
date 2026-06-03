@@ -1,14 +1,14 @@
 <?php
 
-namespace Apility\SEOTools\Providers;
+namespace Apriil\SEOTools\Providers;
 
-use Apility\SEOTools\Contracts;
-use Apility\SEOTools\JsonLd;
-use Apility\SEOTools\JsonLdMulti;
-use Apility\SEOTools\OpenGraph;
-use Apility\SEOTools\SEOMeta;
-use Apility\SEOTools\SEOTools;
-use Apility\SEOTools\TwitterCards;
+use Apriil\SEOTools\Contracts;
+use Apriil\SEOTools\JsonLd;
+use Apriil\SEOTools\JsonLdMulti;
+use Apriil\SEOTools\OpenGraph;
+use Apriil\SEOTools\SEOMeta;
+use Apriil\SEOTools\SEOTools;
+use Apriil\SEOTools\TwitterCards;
 use Illuminate\Config\Repository as Config;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
@@ -25,17 +25,17 @@ use Illuminate\Support\Str;
  *     dirname(__DIR__)
  * );
  * // ...
- * $app->register(Apility\SEOTools\Providers\SEOToolsServiceProvider::class);
+ * $app->register(Apriil\SEOTools\Providers\SEOToolsServiceProvider::class);
  * // ...
  * return $app;
  * ```
  *
- * @see \Apility\SEOTools\Contracts\SEOTools
- * @see \Apility\SEOTools\Contracts\MetaTags
- * @see \Apility\SEOTools\Contracts\OpenGraph
- * @see \Apility\SEOTools\Contracts\TwitterCards
- * @see \Apility\SEOTools\Contracts\JsonLd
- * @see \Apility\SEOTools\Contracts\JsonLdMulti
+ * @see \Apriil\SEOTools\Contracts\SEOTools
+ * @see \Apriil\SEOTools\Contracts\MetaTags
+ * @see \Apriil\SEOTools\Contracts\OpenGraph
+ * @see \Apriil\SEOTools\Contracts\TwitterCards
+ * @see \Apriil\SEOTools\Contracts\JsonLd
+ * @see \Apriil\SEOTools\Contracts\JsonLdMulti
  */
 class SEOToolsServiceProvider extends ServiceProvider implements DeferrableProvider
 {

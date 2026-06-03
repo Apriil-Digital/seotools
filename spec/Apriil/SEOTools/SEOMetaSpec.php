@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Apility\SEOTools;
+namespace spec\Apriil\SEOTools;
 
 use Illuminate\Config\Repository as Config;
 use PhpSpec\ObjectBehavior;
@@ -23,7 +23,7 @@ class SEOMetaSpec extends ObjectBehavior
 
     public function it_is_initializable()
     {
-        $this->shouldHaveType('Apility\SEOTools\SEOMeta');
+        $this->shouldHaveType('Apriil\SEOTools\SEOMeta');
     }
 
     public function it_return_empty_when_title_and_description_is_false()

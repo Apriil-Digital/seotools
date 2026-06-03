@@ -1,6 +1,8 @@
 <?php
 
-namespace Apility\SEOTools\Tests;
+namespace Apriil\SEOTools\Tests;
+
+use PHPUnit\Framework\Attributes\DataProvider;
 
 /**
  * Class SEOToolsServiceProviderTest.
@@ -9,12 +11,8 @@ class SEOToolsServiceProviderTest extends BaseTest
 {
     /**
      * Verify if classes are in service container.
-     *
-     * @dataProvider bindsListProvider
-     *
-     * @param string $contract
-     * @param string $concreteClass
      */
+    #[DataProvider('bindsListProvider')]
     public function test_container_are_provided($contract, $concreteClass)
     {
         $this->assertInstanceOf(
@@ -23,35 +21,32 @@ class SEOToolsServiceProviderTest extends BaseTest
         );
     }
 
-    /**
-     * @return array
-     */
-    public function bindsListProvider()
+    public static function bindsListProvider()
     {
         return [
             [
-                'Apility\SEOTools\Contracts\MetaTags',
-                'Apility\SEOTools\SEOMeta',
+                'Apriil\SEOTools\Contracts\MetaTags',
+                'Apriil\SEOTools\SEOMeta',
             ],
             [
-                'Apility\SEOTools\Contracts\OpenGraph',
-                'Apility\SEOTools\OpenGraph',
+                'Apriil\SEOTools\Contracts\OpenGraph',
+                'Apriil\SEOTools\OpenGraph',
             ],
             [
-                'Apility\SEOTools\Contracts\SEOTools',
-                'Apility\SEOTools\SEOTools',
+                'Apriil\SEOTools\Contracts\SEOTools',
+                'Apriil\SEOTools\SEOTools',
             ],
             [
-                'Apility\SEOTools\Contracts\TwitterCards',
-                'Apility\SEOTools\TwitterCards',
+                'Apriil\SEOTools\Contracts\TwitterCards',
+                'Apriil\SEOTools\TwitterCards',
             ],
             [
-                'Apility\SEOTools\Contracts\JsonLd',
-                'Apility\SEOTools\JsonLd',
+                'Apriil\SEOTools\Contracts\JsonLd',
+                'Apriil\SEOTools\JsonLd',
             ],
             [
-                'Apility\SEOTools\Contracts\JsonLdMulti',
-                'Apility\SEOTools\JsonLdMulti',
+                'Apriil\SEOTools\Contracts\JsonLdMulti',
+                'Apriil\SEOTools\JsonLdMulti',
             ],
         ];
     }

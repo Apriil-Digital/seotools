@@ -1,13 +1,13 @@
 <?php
 
-namespace Apility\SEOTools;
+namespace Apriil\SEOTools;
 
-use Apility\SEOTools\Contracts\TwitterCards as TwitterCardsContract;
+use Apriil\SEOTools\Contracts\TwitterCards as TwitterCardsContract;
 
 /**
  * TwitterCards provides implementation for `TwitterCards` contract.
  *
- * @see \Apility\SEOTools\Contracts\TwitterCards
+ * @see \Apriil\SEOTools\Contracts\TwitterCards
  */
 class TwitterCards implements TwitterCardsContract
 {

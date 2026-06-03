@@ -1,6 +1,6 @@
 <?php
 
-namespace Apility\SEOTools\Tests;
+namespace Apriil\SEOTools\Tests;
 
 use Mockery;
 use DOMDocument;
@@ -26,7 +26,7 @@ abstract class BaseTest extends TestCase
      */
     protected function getPackageProviders($app)
     {
-        return [\Apility\SEOTools\Providers\SEOToolsServiceProvider::class];
+        return [\Apriil\SEOTools\Providers\SEOToolsServiceProvider::class];
     }
 
     /**

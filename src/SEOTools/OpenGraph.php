@@ -1,14 +1,14 @@
 <?php
 
-namespace Apility\SEOTools;
+namespace Apriil\SEOTools;
 
 use Illuminate\Support\Arr;
-use Apility\SEOTools\Contracts\OpenGraph as OpenGraphContract;
+use Apriil\SEOTools\Contracts\OpenGraph as OpenGraphContract;
 
 /**
  * OpenGraph provides implementation for `OpenGraph` contract.
  *
- * @see \Apility\SEOTools\Contracts\OpenGraph
+ * @see \Apriil\SEOTools\Contracts\OpenGraph
  */
 class OpenGraph implements OpenGraphContract
 {

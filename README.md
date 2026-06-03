@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://github.com/apility" target="_blank">
+    <a href="https://github.com/Apriil-Digital" target="_blank">
         <img src="https://avatars3.githubusercontent.com/u/11164074" height="100px">
     </a>
     <h1 align="center">SEOTools - SEO Tools for Laravel and Lumen</h1>
@@ -10,12 +10,12 @@ SEOTools is a package for [Laravel 5.8+](https://laravel.com/) and [Lumen](https
 
 > Current Build Status
 
-[![Build Status](https://travis-ci.org/apility/seotools.svg)](https://travis-ci.org/apility/seotools)
-[![Code Climate](https://codeclimate.com/github/apility/seotools/badges/gpa.svg)](https://codeclimate.com/github/apility/seotools)
+[![Build Status](https://travis-ci.org/Apriil-Digital/seotools.svg)](https://travis-ci.org/Apriil-Digital/seotools)
+[![Code Climate](https://codeclimate.com/github/Apriil-Digital/seotools/badges/gpa.svg)](https://codeclimate.com/github/Apriil-Digital/seotools)
 
 > Statistics
 
-[![Latest Stable Version](https://poser.pugx.org/apility/seotools/v/stable)](https://packagist.org/packages/apility/seotools) [![Total Downloads](https://poser.pugx.org/apility/seotools/downloads)](https://packagist.org/packages/apility/seotools) [![Latest Unstable Version](https://poser.pugx.org/apility/seotools/v/unstable)](https://packagist.org/packages/apility/seotools) [![License](https://poser.pugx.org/apility/seotools/license)](https://packagist.org/packages/apility/seotools)
+[![Latest Stable Version](https://poser.pugx.org/apriil/seotools/v/stable)](https://packagist.org/packages/apriil/seotools) [![Total Downloads](https://poser.pugx.org/apriil/seotools/downloads)](https://packagist.org/packages/apriil/seotools) [![Latest Unstable Version](https://poser.pugx.org/apriil/seotools/v/unstable)](https://packagist.org/packages/apriil/seotools) [![License](https://poser.pugx.org/apriil/seotools/license)](https://packagist.org/packages/apriil/seotools)
 
 For license information check the [LICENSE](LICENSE.md)-file.
 
@@ -35,7 +35,7 @@ Installation
 The first step is using composer to install the package and automatically update your `composer.json` file, you can do this by running:
 
 ```shell
-composer require apility/seotools
+composer require apriil/seotools
 ```
 
 > **Note**: If you are using Laravel 5.5, the steps 2 and 3, for providers and aliases, are unnecessaries. SEOTools supports Laravel new [Package Discovery](https://laravel.com/docs/5.5/packages#package-discovery).
@@ -52,7 +52,7 @@ You need to update your application configuration in order to register the packa
 return [
     // ...
     'providers' => [
-        Apility\SEOTools\Providers\SEOToolsServiceProvider::class,
+        Apriil\SEOTools\Providers\SEOToolsServiceProvider::class,
         // ...
     ],
     // ...
@@ -73,7 +73,7 @@ $app = new Laravel\Lumen\Application(
 
 // ...
 
-$app->register(Apility\SEOTools\Providers\SEOToolsServiceProvider::class);
+$app->register(Apriil\SEOTools\Providers\SEOToolsServiceProvider::class);
 
 // ...
 
@@ -86,12 +86,12 @@ return $app;
 
 You may get access to the SEO tool services using following facades:
 
- - `Apility\SEOTools\Facades\SEOMeta`
- - `Apility\SEOTools\Facades\OpenGraph`
- - `Apility\SEOTools\Facades\TwitterCard`
- - `Apility\SEOTools\Facades\JsonLd`
- - `Apility\SEOTools\Facades\JsonLdMulti`
- - `Apility\SEOTools\Facades\SEOTools`
+ - `Apriil\SEOTools\Facades\SEOMeta`
+ - `Apriil\SEOTools\Facades\OpenGraph`
+ - `Apriil\SEOTools\Facades\TwitterCard`
+ - `Apriil\SEOTools\Facades\JsonLd`
+ - `Apriil\SEOTools\Facades\JsonLdMulti`
+ - `Apriil\SEOTools\Facades\SEOTools`
 
 You can setup a short-version aliases for these facades in your `config/app.php` file. For example:
 
@@ -101,13 +101,13 @@ You can setup a short-version aliases for these facades in your `config/app.php`
 return [
     // ...
     'aliases' => [
-        'SEOMeta'       => Apility\SEOTools\Facades\SEOMeta::class,
-        'OpenGraph'     => Apility\SEOTools\Facades\OpenGraph::class,
-        'Twitter'       => Apility\SEOTools\Facades\TwitterCard::class,
-        'JsonLd'        => Apility\SEOTools\Facades\JsonLd::class,
-        'JsonLdMulti'   => Apility\SEOTools\Facades\JsonLdMulti::class,
+        'SEOMeta'       => Apriil\SEOTools\Facades\SEOMeta::class,
+        'OpenGraph'     => Apriil\SEOTools\Facades\OpenGraph::class,
+        'Twitter'       => Apriil\SEOTools\Facades\TwitterCard::class,
+        'JsonLd'        => Apriil\SEOTools\Facades\JsonLd::class,
+        'JsonLdMulti'   => Apriil\SEOTools\Facades\JsonLdMulti::class,
         // or
-        'SEO' => Apility\SEOTools\Facades\SEOTools::class,
+        'SEO' => Apriil\SEOTools\Facades\SEOTools::class,
         // ...
     ],
     // ...
@@ -127,7 +127,7 @@ php artisan vendor:publish
 or
 
 ```shell
-php artisan vendor:publish --provider="Apility\SEOTools\Providers\SEOToolsServiceProvider"
+php artisan vendor:publish --provider="Apriil\SEOTools\Providers\SEOToolsServiceProvider"
 ```
 
 > Lumen does not support this command, for it you should copy the file `src/resources/config/seotools.php` to `config/seotools.php` of your project
@@ -187,15 +187,15 @@ With **Twitter** you can create OpenGraph tags to the `head`
 
 namespace App\Http\Controllers;
 
-use Apility\SEOTools\Facades\SEOMeta;
-use Apility\SEOTools\Facades\OpenGraph;
-use Apility\SEOTools\Facades\TwitterCard;
-use Apility\SEOTools\Facades\JsonLd;
+use Apriil\SEOTools\Facades\SEOMeta;
+use Apriil\SEOTools\Facades\OpenGraph;
+use Apriil\SEOTools\Facades\TwitterCard;
+use Apriil\SEOTools\Facades\JsonLd;
 // OR with multi
-use Apility\SEOTools\Facades\JsonLdMulti;
+use Apriil\SEOTools\Facades\JsonLdMulti;
 
 // OR
-use Apility\SEOTools\Facades\SEOTools;
+use Apriil\SEOTools\Facades\SEOTools;
 
 class CommomController extends Controller
 {
@@ -430,7 +430,7 @@ class CommomController extends Controller
 
 namespace App\Http\Controllers;
 
-use Apility\SEOTools\Traits\SEOTools as SEOToolsTrait;
+use Apriil\SEOTools\Traits\SEOTools as SEOToolsTrait;
 
 class CommomController extends Controller
 {
@@ -525,7 +525,7 @@ class CommomController extends Controller
 ```php
 <?php
 
-use Apility\SEOTools\Facades\SEOMeta;
+use Apriil\SEOTools\Facades\SEOMeta;
 
 SEOMeta::addKeyword($keyword);
 SEOMeta::addMeta($meta, $value = null, $name = 'name');
@@ -569,7 +569,7 @@ SEOMeta::generate();
 ```php
 <?php
 
-use Apility\SEOTools\Facades\OpenGraph;
+use Apriil\SEOTools\Facades\OpenGraph;
 
 OpenGraph::addProperty($key, $value); // value can be string or array
 OpenGraph::addImage($url); // add image url
@@ -597,7 +597,7 @@ OpenGraph::generate();
 ```php
 <?php
 
-use Apility\SEOTools\Facades\TwitterCard;
+use Apriil\SEOTools\Facades\TwitterCard;
 
 TwitterCard::addValue($key, $value); // value can be string or array
 TwitterCard::setType($type); // type of twitter card tag
@@ -625,7 +625,7 @@ TwitterCard::generate();
 ```php
 <?php
 
-use Apility\SEOTools\Facades\JsonLd;
+use Apriil\SEOTools\Facades\JsonLd;
 
 JsonLd::addValue($key, $value); // value can be string or array
 JsonLd::setType($type); // type of twitter card tag
@@ -653,7 +653,7 @@ JsonLd::generate();
 ```php
 <?php
 
-use Apility\SEOTools\Facades\JsonLdMulti;
+use Apriil\SEOTools\Facades\JsonLdMulti;
 
 JsonLdMulti::newJsonLd(); // create a new JsonLd group
 JsonLdMulti::isEmpty(); // check if the current JsonLd group is empty
@@ -696,7 +696,7 @@ JsonLdMulti::generate();
 ```php
 <?php
 
-use Apility\SEOTools\Facades\SEOTools;
+use Apriil\SEOTools\Facades\SEOTools;
 
 SEOTools::metatags();
 SEOTools::twitter();

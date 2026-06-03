@@ -1,15 +1,15 @@
 <?php
 
-namespace Apility\SEOTools;
+namespace Apriil\SEOTools;
 
 use Illuminate\Support\Arr;
 use Illuminate\Config\Repository as Config;
-use Apility\SEOTools\Contracts\MetaTags as MetaTagsContract;
+use Apriil\SEOTools\Contracts\MetaTags as MetaTagsContract;
 
 /**
  * SEOMeta provides implementation for `MetaTags` contract.
  *
- * @see \Apility\SEOTools\Contracts\MetaTags
+ * @see \Apriil\SEOTools\Contracts\MetaTags
  */
 class SEOMeta implements MetaTagsContract
 {

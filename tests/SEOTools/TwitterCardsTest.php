@@ -1,8 +1,8 @@
 <?php
 
-namespace Apility\SEOTools\Tests;
+namespace Apriil\SEOTools\Tests;
 
-use Apility\SEOTools\TwitterCards;
+use Apriil\SEOTools\TwitterCards;
 
 /**
  * Class TwitterCardsTest.

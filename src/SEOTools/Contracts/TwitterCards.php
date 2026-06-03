@@ -1,6 +1,6 @@
 <?php
 
-namespace Apility\SEOTools\Contracts;
+namespace Apriil\SEOTools\Contracts;
 
 /**
  * TwitterCards defines contract for the "TwitterCard" meta tags container.
@@ -10,7 +10,7 @@ namespace Apility\SEOTools\Contracts;
  * Usage example:
  *
  * ```php
- * use Apility\SEOTools\TwitterCards; // implements `Apility\SEOTools\Contracts\TwitterCards`
+ * use Apriil\SEOTools\TwitterCards; // implements `Apriil\SEOTools\Contracts\TwitterCards`
  *
  * $twitterCards = new TwitterCards();
  *
@@ -23,11 +23,11 @@ namespace Apility\SEOTools\Contracts;
  * echo $twitterCards->generate();
  * ```
  *
- * Implementation of this contract is available via {@see \Apility\SEOTools\Facades\TwitterCard} facade.
+ * Implementation of this contract is available via {@see \Apriil\SEOTools\Facades\TwitterCard} facade.
  * Facade usage example:
  *
  * ```php
- * use Apility\SEOTools\Facades\TwitterCard;
+ * use Apriil\SEOTools\Facades\TwitterCard;
  *
  * // specify meta info
  * TwitterCard::setTitle('Home');
@@ -39,8 +39,8 @@ namespace Apility\SEOTools\Contracts;
  * ```
  *
  * @see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards
- * @see \Apility\SEOTools\TwitterCards
- * @see \Apility\SEOTools\Facades\TwitterCard
+ * @see \Apriil\SEOTools\TwitterCards
+ * @see \Apriil\SEOTools\Facades\TwitterCard
  */
 interface TwitterCards
 {

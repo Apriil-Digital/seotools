@@ -1,6 +1,6 @@
 <?php
 
-namespace Apility\SEOTools\Contracts;
+namespace Apriil\SEOTools\Contracts;
 
 use Illuminate\Config\Repository as Config;
 
@@ -12,7 +12,7 @@ use Illuminate\Config\Repository as Config;
  * Usage example:
  *
  * ```php
- * use Apility\SEOTools\SEOMeta; // implements `Apility\SEOTools\Contracts\MetaTags`
+ * use Apriil\SEOTools\SEOMeta; // implements `Apriil\SEOTools\Contracts\MetaTags`
  *
  * $metaTags = new SEOMeta();
  *
@@ -26,11 +26,11 @@ use Illuminate\Config\Repository as Config;
  * echo $metaTags->generate();
  * ```
  *
- * Implementation of this contract is available via {@see \Apility\SEOTools\Facades\SEOMeta} facade.
+ * Implementation of this contract is available via {@see \Apriil\SEOTools\Facades\SEOMeta} facade.
  * Facade usage example:
  *
  * ```php
- * use Apility\SEOTools\Facades\SEOMeta;
+ * use Apriil\SEOTools\Facades\SEOMeta;
  *
  * // specify meta info
  * SEOMeta::setTitle('Home');
@@ -43,8 +43,8 @@ use Illuminate\Config\Repository as Config;
  * ```
  *
  * @see https://www.w3schools.com/tags/tag_meta.asp
- * @see \Apility\SEOTools\SEOMeta
- * @see \Apility\SEOTools\Facades\SEOMeta
+ * @see \Apriil\SEOTools\SEOMeta
+ * @see \Apriil\SEOTools\Facades\SEOMeta
  */
 interface MetaTags
 {

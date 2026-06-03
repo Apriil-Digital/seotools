@@ -1,13 +1,13 @@
 <?php
 
-namespace Apility\SEOTools;
+namespace Apriil\SEOTools;
 
-use Apility\SEOTools\Contracts\JsonLdMulti as JsonLdMultiContract;
+use Apriil\SEOTools\Contracts\JsonLdMulti as JsonLdMultiContract;
 
 /**
  * JsonLdMulti provides implementation for `JsonLdMulti` contract.
  *
- * @see \Apility\SEOTools\Contracts\JsonLdMulti
+ * @see \Apriil\SEOTools\Contracts\JsonLdMulti
  */
 class JsonLdMulti implements JsonLdMultiContract
 {

@@ -1,5 +1,5 @@
 {
-  "name": "apility/seotools",
+  "name": "apriil/seotools",
   "description": "SEO Tools for Laravel and Lumen",
   "keywords": [
     "laravel",
@@ -13,8 +13,8 @@
   ],
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/apility/seotools/issues",
-    "source": "https://github.com/apility/seotools"
+    "issues": "https://github.com/Apriil-Digital/seotools/issues",
+    "source": "https://github.com/Apriil-Digital/seotools"
   },
   "authors": [
     {
@@ -29,21 +29,21 @@
   "require": {
     "php": ">=7.4",
     "ext-json": "*",
-    "illuminate/config": "5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
-    "illuminate/support": "5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0"
+    "illuminate/config": "5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0 || ^13.0",
+    "illuminate/support": "5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0 || ^13.0"
   },
   "require-dev": {
-    "orchestra/testbench": "~3.8.4 || ^4.0 || ^5.0 || ^6.0",
-    "phpspec/phpspec": "~5.1.1 || ^6.0 || ^7.0"
+    "orchestra/testbench": "~3.8.4 || ^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
+    "phpspec/phpspec": "~5.1.1 || ^6.0 || ^7.0 || ^8.0"
   },
   "autoload": {
     "psr-4": {
-      "Apility\\SEOTools\\": "src/SEOTools/"
+      "Apriil\\SEOTools\\": "src/SEOTools/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Apility\\SEOTools\\Tests\\": "tests/SEOTools"
+      "Apriil\\SEOTools\\Tests\\": "tests/SEOTools"
     }
   },
   "config": {
@@ -52,14 +52,14 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Apility\\SEOTools\\Providers\\SEOToolsServiceProvider"
+        "Apriil\\SEOTools\\Providers\\SEOToolsServiceProvider"
       ],
       "aliases": {
-        "SEOMeta": "Apility\\SEOTools\\Facades\\SEOMeta",
-        "OpenGraph": "Apility\\SEOTools\\Facades\\OpenGraph",
-        "Twitter": "Apility\\SEOTools\\Facades\\TwitterCard",
-        "JsonLd": "Apility\\SEOTools\\Facades\\JsonLd",
-        "SEO": "Apility\\SEOTools\\Facades\\SEOTools"
+        "SEOMeta": "Apriil\\SEOTools\\Facades\\SEOMeta",
+        "OpenGraph": "Apriil\\SEOTools\\Facades\\OpenGraph",
+        "Twitter": "Apriil\\SEOTools\\Facades\\TwitterCard",
+        "JsonLd": "Apriil\\SEOTools\\Facades\\JsonLd",
+        "SEO": "Apriil\\SEOTools\\Facades\\SEOTools"
       }
     }
   }

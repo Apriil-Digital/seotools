@@ -1,8 +1,8 @@
 <?php
 
-namespace Apility\SEOTools\Tests;
+namespace Apriil\SEOTools\Tests;
 
-use Apility\SEOTools\SEOMeta;
+use Apriil\SEOTools\SEOMeta;
 
 /**
  * Class SEOMetaTest.
@@ -274,7 +274,7 @@ class SEOMetaTest extends BaseTest
 
     /**
      * @depends test_set_description
-     * @see     https://github.com/apility/seotools/issues/122
+     * @see     https://github.com/Apriil-Digital/seotools/issues/122
      */
     public function test_utf8()
     {
